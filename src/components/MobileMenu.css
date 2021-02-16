@@ -1,0 +1,67 @@
+.mobile-menu-header {
+  background-color: #000;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.mobile-menu-header button {
+  animation: moveToRight 0.5s ease-in;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin: 1em 0.5em;
+  outline: none;
+  z-index: 1;
+}
+.mobile-menu-list {
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #c31432, #240b36);
+  background: linear-gradient(to right, #c31432, #240b36);
+  height: 100vh;
+  margin: 0;
+  padding-top: 4em;
+  position: fixed;
+  transition: all 0.8s ease;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.mobile-menu-list li,
+a {
+  color: #fff;
+  margin: 1em;
+  list-style: none;
+  text-decoration: none;
+}
+.hide {
+  -webkit-clip-path: circle(0% at 0 0);
+  clip-path: circle(0% at 0 0);
+}
+
+.show {
+  -webkit-clip-path: circle(90% at 0 0);
+  clip-path: circle(90% at 0 0);
+}
+.nav-Link-active {
+  background-color: rgba(148, 145, 148, 0.4);
+  border-radius: 0.3em;
+  padding: 0.3em;
+}
+
+@keyframes moveToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

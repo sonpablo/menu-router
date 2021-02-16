@@ -1,10 +1,11 @@
 import Menu from 'components/Menu';
+import MobileMenu from 'components/MobileMenu';
+import useWindow from 'hooks/useWindow';
 import PageOne from 'pages/PageOne';
 import PageThree from 'pages/PageThree';
 import PageTwo from 'pages/PageTwo';
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
 
 const Routes = (
     <Switch>
@@ -15,9 +16,16 @@ const Routes = (
 
 export default function AppRouter() {
 
+    const { isMobileWindow } = useWindow()
+
     return (
         <Router>
-            <Menu routes={Routes} />
+            {
+                isMobileWindow
+                    ? <MobileMenu routes={Routes} />
+                    : <Menu routes={Routes} />
+            }
+
         </Router>
     )
 }

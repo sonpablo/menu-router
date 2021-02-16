@@ -4,11 +4,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Description
 
-- A simple menu
+- Responsive menu. Mobile - Web
 
 ### What I have used
 
 - React Router
+- Custom hooks
+
+### What I have learned
+
+- React Router.
+- Window dimensions -> Mobile | Tablet | Desktop
+- Get window dimensions
+- CSS animations
+- A bit of CSS
 
 ### How to run
 
