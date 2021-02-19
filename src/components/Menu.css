@@ -1,12 +1,12 @@
 .nav-container {
-  background: #c31432; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #c31432, #240b36);
+  background: #c31432; /* fallback for old browsers */
   background: linear-gradient(to right, #c31432, #240b36);
   box-shadow: 0px 1px 1px 0px rgba(148, 145, 148, 0.5);
   padding: 1em 0;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
 }
 .nav-container ul {
   display: flex;

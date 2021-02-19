@@ -4,23 +4,26 @@ import './Menu.css';
 export default function Menu({ routes }) {
 
     return (
-        <div>
-            <nav className='nav-container'>
+        <>
+            <nav data-testid='navbar' className='nav-container'>
                 <ul >
-                    <li>
+                    <li >
                         <NavLink
                             activeClassName='nav-Link-active'
+                            data-testid='counter-page-link'
                             exact
-                            to='/'>Page one</NavLink>
+                            to='/'>Counter page</NavLink>
                     </li>
-                    <li>
+                    <li >
                         <NavLink
                             activeClassName='nav-Link-active'
+                            data-testid='page-two-link'
                             to='/page-two'>Page two</NavLink>
                     </li>
-                    <li>
+                    <li >
                         <NavLink
                             activeClassName='nav-Link-active'
+                            data-testid='page-three-link'
                             to='/page-three'>Page three</NavLink>
                     </li>
                 </ul>
@@ -28,6 +31,6 @@ export default function Menu({ routes }) {
             <section className='section-routes'>
                 {routes}
             </section>
-        </div>
+        </>
     )
 }

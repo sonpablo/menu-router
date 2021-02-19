@@ -6,21 +6,22 @@ const styleMenuHide = 'mobile-menu-list hide'
 const styleMenuShow = 'mobile-menu-list show'
 
 export default function MobileMenu({ routes }) {
-    const [style, setStyle] = useState(styleMenuHide)
+    const [ulStyle, setStyle] = useState(styleMenuHide)
 
     const onClick = () => {
         setStyle(prevValue => prevValue === styleMenuHide
             ? styleMenuShow
-            : styleMenuHide)
+            : styleMenuHide
+        )
     }
 
     return (
         <>
-            <header className='mobile-menu-header'>
-                <button onClick={onClick}>Menú</button>
-            </header>
-            <nav >
-                <ul className={style} >
+            <nav className='mobile-menu-container' >
+                <header >
+                    <button onClick={onClick}>Menú</button>
+                </header>
+                <ul className={ulStyle} >
                     <li onClick={onClick}>
                         <NavLink
                             activeClassName='nav-Link-active'

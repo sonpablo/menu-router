@@ -1,12 +1,11 @@
-.mobile-menu-header {
+.mobile-menu-container {
   background-color: #000;
   margin: 0;
   position: fixed;
   top: 0;
-  width: 100%;
-  z-index: 1;
+  width: 100vw;
 }
-.mobile-menu-header button {
+.mobile-menu-container button {
   animation: moveToRight 0.5s ease-in;
   background-color: transparent;
   border: none;
