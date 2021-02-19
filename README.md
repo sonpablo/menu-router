@@ -10,6 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - React Router
 - Custom hooks
+- react testing library
 
 ### What I have learned
 
@@ -18,6 +19,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Get window dimensions
 - CSS animations
 - A bit of CSS
+- A bit of testing react library
 
 ### How to run
 
